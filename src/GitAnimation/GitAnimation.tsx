@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ReactComponent as GitBranchSvg } from './images/git-branch.svg'
+import GitBranchSvg1 from './SvgComponents/GitBranchSvg1'
+import GitBranchSvg2 from './SvgComponents/GitBranchSvg2'
 
 const GitAnimation = () => {
-
     return (
         <div>
             <div>
@@ -11,7 +11,7 @@ const GitAnimation = () => {
             </div>
 
             <StyledContainer>
-                <StyledGitBranchSvg className={"animated"} />
+                <StyledGitBranchSvg />
             </StyledContainer>
         </div>
     )
@@ -29,11 +29,11 @@ const StyledContainer = styled(Container)`
     justify-content: center;
 `;
 
-const StyledGitBranchSvg = styled(GitBranchSvg)`
+const StyledGitBranchSvg = styled(GitBranchSvg2)`
     margin-top: 100px;
     // transform: rotate(-90deg) scale(0.5);
 
-    .st7 {
+    /* .st7 {
         fill: red;
 
         cx: 400px;
@@ -46,7 +46,7 @@ const StyledGitBranchSvg = styled(GitBranchSvg)`
 
     #upper-branch:hover {
             d: path("M 264.5 74.2 c 0 22.6 -18.4 41 -41 41 m 41 -41 c 0 -22.6 18.4 -41 41 -41 h 160.4");
-    }
+    } */
 `;
 
 
